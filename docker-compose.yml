@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  junod:
+    image: ghcr.io/cosmoscontracts/juno:v5.0.1
+    pull_policy: always
+    volumes:
+      - ./config:/root/.juno/config
+    networks:
+      - juno
+    ports:
+      - 1317:1317 # rest
+      - 26656:26656 # p2p
+      - 26657:26657 # rpc
+    command:  >
+      sh -c "mkdir -p /root/.juno/data/ &&
+              cp -n /root/.juno/config/priv_validator_state.json /root/.juno/data/priv_validator_state.json &&
+             ./setup_and_run.sh"
+networks:
+  juno:
+    driver: bridge
