@@ -28,3 +28,11 @@ Reset the world state:
 ```sh
 $ docker-compose rm
 ```
+
+## Accounts
+
+LocalJuno is pre-configured with one validator
+
+| Account   | Address                                                                                                  | Mnemonic                                                                                                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| validator | `juno1phaxpevm5wecex2jyaqty2a4v02qj7qmpjja9n`<br/>`junovaloper1phaxpevm5wecex2jyaqty2a4v02qj7qm70yj72` | `satisfy adjust timber high purchase tuition stool faith fine install that you unaware feed domain license impose boss human eager hat rent enjoy dawn`                    |
